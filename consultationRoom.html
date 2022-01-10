@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Room</title>
+
+    <style>
+        /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+          
+        }
+        /* The navigation bar */
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed; /* Set the navbar to fixed position */
+          z-index: 1;
+          top: 0; /* Position the navbar at the top of the page */
+          width: 100%; /* Full width */
+          background-color: #428bca;
+          left: 0%;
+
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+
+        /* Change background on mouse-over */
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+
+        .body{
+          padding-top: 3%;
+        }
+        .container {
+          display: flex;
+        }
+        .body2 {
+          padding-left: 2% ;
+          width: 85%;
+          background-image: url("PICSCOMING/bg.jpg");
+          margin-top: 1%;
+          font-size: 20px;
+          border-radius: 2%;
+
+        }
+        .healthy-news{
+          border-radius: 5px; 
+          margin-top: 50px;
+          border: 1px solid; 
+          background-color: darkturquoise; 
+          border-color: dodgerblue;
+          align-content: center;
+          width: 90%;
+          font-weight: bolder;
+          padding-left: 2%;
+          margin-left: 1%;
+          right: 0%;
+          cursor: pointer;
+        }
+        .forms {
+          border: 1px solid;
+          width: 20%;
+          right: 0%;
+          padding-left: 2% ;
+          border-color: #0684f3;
+          border-radius: 3%;
+          background-color: darkturquoise;
+          align-content: center;
+          margin-left: 1%;
+          height: 330px;
+        }
+        .btn {
+          background-color: #428bca;
+          color: white;
+          height: 30px;
+          width: 70px;
+          text-align: center;
+          border-radius: 10%;
+          cursor: pointer;
+        }
+        .btn:hover{
+          background-color: lightgray;
+          color: black;
+        }
+        .start{
+          width: 65%;
+          margin-left: 50px;
+          padding: 7px;
+         
+          background-color: lightseagreen;
+          border-radius: 10px;
+        }
+        .paragraph{
+          width: 60%;
+          border-radius: 10px;
+          background-color: #428bca;
+          padding: 10px;
+        }
+        .footer {
+            background-color: #333;
+            overflow: hidden;
+            bottom: 0;
+            width: 100%;
+            height: 70px;
+            right: 0;
+            background: #428bca;
+            margin-top: 10px;
+            border-radius: 10px;
+
+        }
+    </style>
+
+    <script lang="javascript ">
+      function displayAlert(){
+        alert(
+          "We Are Glad You Trusted Us With Your Health And We Will Not Let You Down" )
+          
+      }
+          
+    </script>
+</head>
+<body style="background-color: rgb(214, 200, 200);">
+    <div class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="consultationRoom.html">CONSULTATION ROOOM</a>
+        <a href="news.html">NEWS</a>
+        <a href="aboutUs.html">ABOUT US</a>
+      </div>
+
+     
+     <div class="body">
+       <div class="container">
+
+        
+
+        <div class="body2">
+          <div>
+            <h1 style="font-size: 30px; width: 270px; background: rgba(0, 0, 0, 0.2);" > <i><img src="WEB MED/logo.jpg" height="40px" width="50px" style="border-radius: 40px;"></i> WEB MED</h1>
+          </div>
+          <h1> Welcome our User</h1>
+          <p class="paragraph" >If you are here, we suppose you need help. you dont have to worry anymore, you made a good choice because we are going to offer you with our greatest services. <i> <b>We Care About Your Health</b> </i> </p>
+          
+
+          <div>
+            <form action="#" method="post" class="start">
+              <p>Befor we start helping you, Can you please tick on of the following options so that we know which condition you are in</p> <br>
+              <input type="radio" name="condition" value="not-bad" checked /> Not Bad
+              <input type="radio" name="condition" value="intermediate" /> Intermediate
+              <input type="radio" name="condition" value="critical" /> Critical
+              <input type="radio" name="condition" value="very-critical" /> Very Critical
+              
+            </form>
+           
+              <div  style="margin-top: 25px; border-radius: 10px; width: 70%; margin-left: 100px; background: rgb(98, 196, 235);">
+                <h3 style="padding-top: 5px;">Welcome to the Doctors Room Feel at Home</h1>
+                <div style="display: flex;">
+             
+                  <div  style="margin-left: 50px;">
+                    <input type="checkbox" name="head" value="Head">
+                    <label value="head">Headache</label> <br>
+    
+                    <input type="checkbox" name="fever" value="Fever">
+                    <label>Fever</label><br>
+    
+                    <input type="checkbox" name="vomiting" value="Vomiting">
+                    <label>Vomiting</label><br>
+    
+                    <input type="checkbox" name="bodypain" value="Genera body pain">
+                    <label>General body Pain</label> <br> 
+                  </div>
+    
+                    <div style="margin-left: 50px;">
+                    <input type="checkbox" name="Stomach" value="Stomachache">
+                    <label>Stomachache</label><br>
+    
+                    <input type="checkbox" name="joint" value="Joint pains">
+                    <label>Joint pains</label> <br>
+                  
+                    <input type="checkbox" name="Rashes" value="Rashes">
+                    <label>Rashes</label><br>
+    
+                    <input type="checkbox" name="apetite" value="Loss of Apetite">
+                    <label>Loss of Apetite</label><br>
+                    </div>
+                    
+                    <div  style="margin-left: 50px;">
+                      <input type="checkbox" name="tooth" value="Toothache">
+                    <label>Toothache</label><br>
+                
+                    <input type="checkbox" name="diarr" value="Diarrhea">
+                    <label>Diarrhea<label><br>
+                
+                    <input type="checkbox" name="wound" value="Wounds">
+                    <label>Wounds</label><br>
+                
+                    <input type="checkbox" name="sole" value="Sole Throte">
+                    <label>Sole Throte</label><br></p>
+                    </div>
+
+                    
+                    
+    
+                    
+                </div>
+              </div>
+            
+            
+            <div style="margin-left: 200px; margin-top: 25px; width: 70%; border-radius: 10px; padding: 7px; background: rgb(150, 214, 240);">
+              <h2>write anything you feel that is not above</h2>
+                <textarea rows="5" cols="90" placeholder="write here" name="textArea" ></textarea>
+            </div> <br>
+
+            <div style="margin-left: 270px;background: rgb(177, 223, 241); padding: 10px; border-radius: 10px; width: 70%; margin-bottom: 10px;">
+              <h3>Please provide us with an email where you want to receive your results</h3>
+              <form action="#" method="post">
+                <input type="text" name="email" placeholder="Enter email" required>
+                <input id="button" type="submit" name="submit" value="Submit" style="background-color: dodgerblue; border-radius: 5px; cursor: pointer;" onclick="displayAlert(button)">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="forms">
+          <form action="#">
+            <h2>Doctors Appointment Booking</h2>
+            <br>
+            <p>Email</p>
+            <input type="text" name="email" placeholder="Enter email" required> <br>
+
+            <p>Password</p>
+            <input type="password" name="password" required> <br>
+            <br>
+            <div>
+              <button class="btn">Clear</button>
+              <button class="btn">Register</button>
+            </div>
+            
+
+          </form>
+          <div class="healthy-news">
+            <a href="news.html"> <p style="color: #000000;" >GET THE WORLD'S LATEST HEALTHY NEWS</p></a>
+           
+          </div>
+          <div>
+            <img src="PICSCOMING/diabetis.jpg" alt="" height="250px" width="250px" style="margin-top: 20px;">
+          </div>
+          <div>
+            <img src="PICSCOMING/pic.jpg" alt="" height="270px" width="250px" style="margin-top: 20px;">
+          </div>
+         
+        </div>
+
+       </div>
+
+       <div class="footer">
+        <a href="#"><img src="PICSCOMING/whatsapp-icon-0.png" height="50px" width="50px" style="border-radius: 50px;"></a>
+        <a href="#"><img src="PICSCOMING/1200px-Facebook_icon.svg.png" height="50px" width="50px" style="border-radius: 50px;"></a>
+        <a href="#"><img src="PICSCOMING/Pinterest-Icon-Square.jpg" height="50px" width="50px" style="border-radius: 50px;"></a>
+        <a href="#"><img src="PICSCOMING/twitter-icon-square-logo-108D17D373-seeklogo.com_.png" height="50px" width="50px" style="border-radius: 50px;"></a>
+
+     </div>
+
+       
+     </div>
+</body>
+</html>
